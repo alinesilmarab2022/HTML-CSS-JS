@@ -1,0 +1,214 @@
+* {
+    /*CSS RESET*/
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+
+    background-image: url(img/ui.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#h21 {
+    width: 41.5%;
+    height: 1%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid rgb(207, 54, 54);
+    background-color: rgb(207, 54, 54);
+}
+
+
+#table1 {
+
+    margin: 0 auto;
+    width: 42%;
+    height: 1%;
+    /* float: left;
+    margin-left: 30%; */
+    margin-top: 30px;
+}
+
+td {
+
+    width: 400px;
+    height: 200px;
+    background-color: DarkRed;
+    border: 4px solid Brown;
+
+}
+
+
+td img {
+
+    float: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+#footer1 {
+
+    width: 41.5%;
+    height: 1%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid DarkRed;
+    border-radius: 50px;
+    background-color: DarkRed;
+    clear: both;
+    margin-bottom: 32px;
+    /* margin-left: 30%; */
+
+}
+
+#victory {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    font: bolder;
+    text-shadow: red -2px 0;
+    margin-left: 40%;
+    float: left;
+}
+
+#buttonfolder1 {
+
+    border: 0 solid black;
+    border-radius: 50px;
+    margin-top: 0px;
+    background-color: DarkRed;
+}
+
+#navopition2 {
+
+    width: 41.5%;
+    height: 1%;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 70px;
+    border: 2px solid rgb(207, 54, 54);
+    background-color: rgb(207, 54, 54);
+
+}
+
+input [type=radio]{
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+#body2 {
+
+    background-image: url(img/ui.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#header2 {
+
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-image: url(img/Vai-Dar-Namoro.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 20% 100%;
+}
+
+#navopition {
+
+    width: 41.5%;
+    height: 1%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid rgb(207, 54, 54);
+    background-color: rgb(207, 54, 54);
+
+}
+
+#navh {
+
+    width: 41.5%;
+    height: 1%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid DarkRed;
+    background-color: DarkRed;
+
+}
+
+#navh2 {
+
+    width: 41.5%;
+    height: 1%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid DarkRed;
+    background-color: DarkRed;
+
+}
+
+#table2 {
+
+    margin: 0 auto;
+    width: 42%;
+    height: 1%;
+}
+
+
+#navfooter {
+
+
+    width: 41.5%;
+    height: 1%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid rgb(207, 54, 54);
+    background-color: rgb(207, 54, 54);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+#footer2 {
+
+    width: 41.5%;
+    height: 1%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid DarkRed;
+    border-radius: 50px;
+    background-color: DarkRed;
+    margin-bottom: 32px;
+
+}
+
+#buttonfolder2 {
+
+    border: 0 solid black;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: DarkRed;
+    cursor: pointer;
+}
+
+#inicio {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+#jogo {
+    display: none;
+    width: 100%;
+    height: 100%;
+}

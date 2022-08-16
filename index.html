@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Jogo do Namoro </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="externo.js">
+    </script>
+</head>
+
+<body>
+
+    <div id="inicio">
+
+        <body id="body2" alink="white" vlink="white" link="white">
+
+            <header id="header2"></header>
+
+            <nav id="navopition">
+
+                <h2 align="center">
+                    <font face="arial" color="white"> Escolha os Personagens: </font>
+                </h2>
+
+            </nav>
+
+            <table id="table2">
+                <form action="#" method="post">
+                    <nav id="navh">
+                        <h2 align="center">
+                            <font face="arial" color="white"> Os Devs - Choose your Fighter: </font>
+                        </h2>
+                    </nav>
+                    <tr>
+                        <td> <label><input type="radio" name="x" id="x1" value="Rubem" checked> <img src="img/Rubem.png"
+                                    alt="a"> </label> </td>
+                        <td> <label><input type="radio" name="x" id="x2" value="Galo"> <img src="img/Galo.png" alt="b">
+                            </label> </td>
+                        <td> <label><input type="radio" name="x" id="x3" value="Well"> <img src="img/Well.png" alt="c">
+                            </label> </td>
+                        <td> <label><input type="radio" name="x" id="x4" value="Plinio"> <img src="img/Plinio.png"
+                                    alt="d"> </label> </td>
+                    </tr>
+                </form>
+
+
+            </table>
+
+            <table id="table2">
+                <form action="#" method="post">
+                    <nav id="navh2">
+                        <h2 align="center">
+                            <font face="arial" color="white"> Time Redes - Choose your Fighter: </font>
+                        </h2>
+                    </nav>
+                    <tr>
+                        <td> <label><input type="radio" name="y" id="y1" checked value="Ferlanio"> <img
+                                    src="img/Ferlanio.png" alt="e"> </label> </td>
+                        <td> <label><input type="radio" name="y" id="y2" value="Raposao"> <img src="img/Raposao.png"
+                                    alt="f"> </label> </td>
+                        <td> <label><input type="radio" name="y" id="y3" value="Claudio"> <img src="img/Claudio.png"
+                                    alt="g"> </label> </td>
+                        <td> <label><input type="radio" name="y" id="y4" value="Hugao"> <img src="img/Hugao.png"
+                                    alt="h"> </label> </td>
+                    </tr>
+
+                </form>
+            </table>
+
+            <nav id="navfooter" align="center">
+                <form action="#" method="post">
+                    <label align="left">
+                        <font color="white"> <strong> Escolha o modo de Jogo: </strong></font>
+                    </label>
+                    <label><input type="radio" name="cpu" id="cpu" required checked>
+                        <font color="white"> <strong> Vs CPU </strong> </font>
+                    </label>
+                    <label><input type="radio" name="cpu" id="solo" required>
+                        <font color="white"> <strong> 1X1 </strong> </font>
+                    </label>
+                </form>
+            </nav>
+
+
+            <footer align="center" id="footer2">
+                <button id="buttonfolder2" onclick="telaInicial(); escolhaPlayer1(); escolhaPlayer2();">
+                    <font face="arial" size="6" color="white"> START GAME </font>
+                </button>
+            </footer>
+
+        </body>
+    </div>
+
+
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="jogo">
+        <header align="center">
+            <nav id="navopition2">
+
+                <h2 id="h21" align="center">
+                    <font face="arial" color="white"> Jogo do Namoro! </font>
+                </h2>
+
+            </nav><br />
+            <h2 id="victory" align="center"> </h2>
+        </header>
+
+
+        <body id="body2" alink="white" vlink="white" link="white">
+
+            <table id="table1" border="1">
+                <tbody>
+                    <tr>
+                        <td> <img src="img/transp.png" alt="branco" id="c1" onclick="return checkjogo(this.id)">
+                            <audio src="audio/pare.mpeg" id="a1"></audio>
+                            <button id="c1"></button>
+                            <script>
+                                document.getElementById("c1").addEventListener("click", function () {
+                                    document.getElementById("a1").play();
+                                }); </script>
+                        </td>
+
+                        <td> <img src="img/transp.png" alt="branco" id="c2" onclick="return checkjogo(this.id)"><audio
+                                src="audio/efeito-sonoro.mp3" id="a2"></audio>
+                            <button id="c2"></button>
+                            <script>
+                                document.getElementById("c2").addEventListener("click", function () {
+                                    document.getElementById("a2").play();
+                                }); </script>
+                        </td>
+
+                        <td> <img src="img/transp.png" alt="branco" id="c3" onclick="return checkjogo(this.id)"><audio
+                                src="audio/danca.mpeg" id="a3"></audio>
+                            <button id="c3"></button>
+                            <script>
+                                document.getElementById("c3").addEventListener("click", function () {
+                                    document.getElementById("a3").play();
+                                }); </script>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <img src="img/transp.png" alt="branco" id="c4" onclick="return checkjogo(this.id)"> <audio
+                                src="audio/demais.mpeg" id="a4"></audio>
+                            <button id="c4"></button>
+                            <script>
+                                document.getElementById("c4").addEventListener("click", function () {
+                                    document.getElementById("a4").play();
+                                }); </script>
+                        </td>
+
+                        <td> <img src="img/transp.png" alt="branco" id="c5" onclick="return checkjogo(this.id)"> <audio
+                                src="audio/ajdsafeffd.mpeg" id="a5"></audio>
+                            <button id="c5"></button>
+                            <script>
+                                document.getElementById("c5").addEventListener("click", function () {
+                                    document.getElementById("a5").play();
+                                }); </script>
+                        </td>
+
+                        <td> <img src="img/transp.png" alt="branco" id="c6" onclick="return checkjogo(this.id)"> <audio
+                                src="audio/que papelao.mpeg" id="a6"></audio>
+                            <button id="c6"></button>
+                            <script>
+                                document.getElementById("c6").addEventListener("click", function () {
+                                    document.getElementById("a6").play();
+                                }); </script>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <img src="img/transp.png" alt="branco" id="c7" onclick="return checkjogo(this.id)"> <audio
+                                src="audio/que isso meu filho.mpeg" id="a7"></audio>
+                            <button id="c7"></button>
+                            <script>
+                                document.getElementById("c7").addEventListener("click", function () {
+                                    document.getElementById("a7").play();
+                                }); </script>
+                        </td>
+
+                        <td> <img src="img/transp.png" alt="branco" id="c8" onclick="return checkjogo(this.id)"> <audio
+                                src="audio/cavalo.mpeg" id="a8"></audio>
+                            <button id="c8"></button>
+                            <script>
+                                document.getElementById("c8").addEventListener("click", function () {
+                                    document.getElementById("a8").play();
+                                }); </script>
+                        </td>
+
+                        <td> <img src="img/transp.png" alt="branco" id="c9" onclick="return checkjogo(this.id)"> <audio
+                                src="audio/ele gosta.mpeg" id="a9"></audio>
+                            <button id="c9"></button>
+                            <script>
+                                document.getElementById("c9").addEventListener("click", function () {
+                                    document.getElementById("a9").play();
+                                }); </script>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <footer align="center" id="footer1">
+                <button id="buttonfolder1">
+                    <a href="index.html">
+                        <font face="arial" size="6"> VOLTAR AO MENU </font>
+                    </a>
+                </button>
+            </footer>
+
+
+            <audio src="audio/oh potencia.mpeg" id="potencia"></audio>
+            <audio src="audio/[EFEITO SONORO] É BRINCADEIRA HEI RODRIGO FARO(MP3_70K).mp3" id="brincadeira"></audio>
+            <audio src="audio/risada-do-peludao-atumalaca.mp3" id="risada"></audio>
+            <audio src="audio/uepa.mp3" id="uepa"></audio>
+        </body>
+    </div>
+
+</html>
